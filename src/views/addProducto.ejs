@@ -1,0 +1,43 @@
+<% include header %>
+    <div class="container mt-5">
+        <h1>Agregar producto</h1>
+        <form action="/api/producto" method="POST" id="formAddProduct">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre..." name="nombre" id="nombre">
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="stock">Cantidad</label>
+                    <input type="number" class="form-control" placeholder="Cantidad..." name="stock" id="stock">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="categoria">Categoria</label>
+                    <select class="form-control" id="categoria" name="categoria">
+                        <option value="0">Seleccione una categoria</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row precios">
+                <div class="form-group col-md-6">
+                    <label for="precioCompra">Precio de compra</label>
+                    <input type="number" class="form-control" placeholder="Precio que te sale al comprar..." name="precioCompra" id="precioCompra">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="precioVenta">Precio de venta</label>
+                    <input type="number" class="form-control" placeholder="Precio con el que vendes..." name="precioVenta" id="precioVenta">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success float-right btn-lg" id="btnAddProduct">Agregar</button>
+        </form>
+    </div>
+
+    <script src="js/jquery-slim-3.1.1.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

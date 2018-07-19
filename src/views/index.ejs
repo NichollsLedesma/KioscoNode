@@ -1,0 +1,104 @@
+<% include header %>
+    <!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
+            <img src="img/logo.png" class="img-fluid logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="navbar-nav">
+                <!-- <a class="nav-item nav-link" href="#"></a> -->
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-success float-right">Confirmar</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-7 listProductos">
+                <h3>Listado de productos</h3>
+                <table class="table table-striped table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Controles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Coca Cola 2.5L.</td>
+                            <td>$ 55.00</td>
+                            <td>10</td>
+                            <td><button class="btn btn-default">Vender</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jabon Tocador Rexona</td>
+                            <td>$ 15.50</td>
+                            <td>13</td>
+                            <td><button class="btn btn-default">Vender</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Harina 0000 - 1Kg.</td>
+                            <td>$ 17.90</td>
+                            <td>8</td>
+                            <td><button class="btn btn-default">Vender</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-5 listCarro">
+                <h3>Cosas que esta llevando.</h3>
+                <span class="total"><strong>$ ####,##</strong></span>
+                <table class="table table-striped table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Sub-total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Coca Cola 2.5L.</td>
+                            <td>10</td>
+                            <td>$ 55.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jabon Tocador Rexona</td>
+                            <td>13</td>
+                            <td>$ 15.50</td>
+                            
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Harina 0000 - 1Kg.</td>
+                            <td>8</td>
+                            <td>$ 17.90</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="js/jquery-slim-3.1.1.min.js"></script>
+    <script src="js/bootstrap-4.1.2.min.js"></script>
+</body>
+</html>
